@@ -11,7 +11,7 @@ interface and Z->A for the HLA interface; both directions are in ipsae_scores.cs
 
 Of 20 designs, only 5 have any confidently predicted interface to the G12D peptide
 (ipSAE > 0.15). Of those 5, only 2 discriminate against the wild-type peptide, and both
-are on the same RFdiffusion2 scaffold (d010).
+are on the same RFD4-Proteina scaffold (d010).
 
 | design | n seeds | G12D pep | WT pep | selectivity | G12D HLA | apo HLA | apo selectivity |
 |---|---|---|---|---|---|---|---|
