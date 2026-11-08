@@ -170,7 +170,7 @@ will be added here, with the lab measurements, once published.
 
 ## Methods
 
-RFdiffusion2 backbone generation (Tamarind Bio) → motif and composition screening →
+RFD4-Proteina backbone generation (Tamarind Bio) → motif and composition screening →
 charge-biased ProteinMPNN redesign (`--use_soluble_model --omit_AAs CX --sampling_temp 0.1
 0.2 --num_seq_per_target 32`) → Boltz-2 2.0.3 co-folding against all three targets
 (`--diffusion_samples 1 --recycling_steps 3`) → ipSAE (PAE cutoff 10, distance cutoff 10,
