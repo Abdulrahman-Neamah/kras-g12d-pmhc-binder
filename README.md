@@ -34,14 +34,28 @@ An ipSAE of exactly 0 means **no residue pair across the interface had PAE below
 chains are still in contact — 3.95 Å minimum backbone separation for `d010_13` against wild
 type — so the model places the binder against the groove but has no confidence in where.
 
-By ipTM, the initial screen of 20 designs looked like a usable field. By ipSAE, **15 of
-those 20 have no confident interface to any target, including the one they were designed
-for.** They are not weak binders; they are non-binders that ipTM flattered. Across all 27
-designs eventually screened, the same 15 remain without an interface — every design added
-later came from the one scaffold that worked.
+**15 of the 20 designs in the initial screen have no confident interface to any target by
+ipSAE**, including the one they were designed for. Across all 27 designs eventually
+screened, the same 15 remain without an interface — every design added later came from the
+one scaffold that worked.
 
-This is not a tie-break. Ranking on ipTM alone would have missed `mpnn_d010_16` entirely
-(ipTM wild-type gap +0.10, ipSAE +0.45) and promoted several designs with no interface.
+The two metrics do not disagree on all 15. On 11 of them ipTM was also low (0.144–0.460)
+and the two agree the design is bad. The genuine disagreement is on **4 of the 20**, where
+ipTM looked plausible and ipSAE found nothing:
+
+| design | ipTM (G12D) | ipSAE (G12D) |
+|---|---|---|
+| mpnn_d002_09 | 0.685 | 0.123 |
+| mpnn_d025_17 | 0.633 | 0.019 |
+| mpnn_d002_10 | 0.559 | 0.000 |
+| mpnn_d031_01 | 0.543 | 0.072 |
+
+It also runs the other way: ranking on ipTM alone would have missed `mpnn_d010_16`
+entirely (ipTM wild-type gap +0.10, ipSAE +0.45).
+
+Four of twenty is a smaller headline than fifteen, and it is the number the data supports.
+It is still enough to change the submission: on ipTM those four would have taken slots, and
+the design ipTM undersold was the second-best discriminator in the set.
 
 ## The epitope was measured, not assumed
 
